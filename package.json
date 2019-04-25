@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-rest-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/run.js",
+  "scripts": {
+    "start": "node src/run.js",
+    "server": "nodemon src/run.js",
+    "start:resetdb": "FORCE_DB_RESET=true node src/run.js",
+    "seeddata": "node scripts/seed_sampledata.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-hbs": "^2.1.2",
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.1.0"
+  },
+  "devDependencies": {
+    "debug": "^4.1.1"
+  }
+}
